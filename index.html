@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <fieldset>
+            <label for="name">Name: <input class="form"  name="fname" id="name" placeholder="name" type="text" required></label>
+            <label for="email">Email Address: <input class="form" id="email" placeholder="email" type="email"  required></label>
+            <label for="phone-number">Phone Number: <input class="form" id="phone-number" placeholder="phone-number" type="number" required></label>
+            <label for="gender">Gender:<input type="radio" value="radio" name="radio">Female
+                <input type="radio" value="radio" name="radio">Male</label>
+            <label for="password">Password: <input class="form" id="password" placeholder="password" type="password" required>
+            </label>
+        </fieldset>
+        <button id="submit" type="submit"  value="Submit">Submit</button>
+    </form>
+    <script>
+         function emptyValidation() {
+      var formField = document.forms["Form1"]["firstName"].value;
+      if (formField == "" || x == null) {
+         alert("Name must be filled out");
+         return false;
+      }
+   }
+    </script>
+    <script type="text/javascript">
+        alert("Successful Submission");
+        console,console.log("We are writing javascript")
+        var  value = 2+4
+        console.log(value)
+    </script>
+</body>
+</html>
